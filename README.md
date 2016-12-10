@@ -98,3 +98,15 @@ var f = function() { ... }
 // Function Declaration
 function f() { ... }
 ```
+Существует ещё один способ создания функции, который используется очень редко, но упомянем и его для полноты картины.
+
+Он позволяет создавать функцию полностью «на лету» из строки, вот так:
+
+```javascript
+var sum = new Function('a,b', ' return a+b; ');
+
+var result = sum(1, 2);
+alert( result ); // 3
+```
+
+То есть, функция создаётся вызовом **new Function(params, code)**
