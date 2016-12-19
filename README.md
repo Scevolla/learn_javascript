@@ -29,6 +29,7 @@
 	- [Окружение: DOM, BOM и JS] (#10_1)
 	- [Дерево DOM] (#10_2)
 	- [Навигация по DOM-элементам] (#10_3)
+	- [Поиск: getElement* и querySelector*] (#10_4)
 
 ## <a name="1"> Основы
 
@@ -325,5 +326,23 @@ function showMessage(text, options) {
 
 ![](https://learn.javascript.ru/article/traversing-dom/dom-links@2x.png)
 ![](https://learn.javascript.ru/article/traversing-dom/dom-links-elements@2x.png)
+
+[наверх](#top)
+
+### <a name="10_4"></a> Поиск: getElement* и querySelector*
+
+Есть 6 основных методов поиска элементов DOM:
+
+- getElementById
+- getElementsByName
+- getElementsByTagName
+- getElementsByClassName
+- querySelector
+- querySelectorAll
+
+Кроме того:
+
+- Есть метод **elem.matches(css)**, который проверяет, удовлетворяет ли элемент CSS-селектору. Он поддерживается большинством браузеров в префиксной форме **(ms, moz, webkit)**.
+- Метод **elem.closest(css)** ищет ближайший элемент выше по иерархии DOM, подходящий под CSS-селектор css. Сам элемент тоже включается в поиск.
 
 [наверх](#top)
