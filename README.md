@@ -26,6 +26,7 @@
 	- [Псевдомассив аргументов "arguments"](#2_9)
 	- [Дата и Время](#2_10)
 3. [Документ и объекты страницы](#10)
+	- [Окружение: DOM, BOM и JS] (#10_1)
 
 ## <a name="1"> Основы
 
@@ -303,3 +304,9 @@ function showMessage(text, options) {
 [наверх](#top)
 
 ## <a name="10"></a> Документ и объекты страницы 
+
+### <a name="10_1"></a> Окружение: DOM, BOM и JS
+
+![alt text](https://learn.javascript.ru/article/browser-environment/windowObjects@2x.png "Logo Title Text 1")
+
+[наверх](#top)
