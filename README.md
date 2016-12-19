@@ -307,6 +307,6 @@ function showMessage(text, options) {
 
 ### <a name="10_1"></a> Окружение: DOM, BOM и JS
 
-!(https://learn.javascript.ru/article/browser-environment/windowObjects@2x.png)
+![](https://learn.javascript.ru/article/browser-environment/windowObjects@2x.png)
 
 [наверх](#top)
