@@ -1,4 +1,4 @@
-# Javascript <a name="top">
+# <a name="top"> Javascript
 
 #### Содержание
 
@@ -245,4 +245,5 @@ function showMessage(text, options) {
 7. Для бенчмаркинга лучше использовать **performance.now()** (кроме IE9-), он в 1000 раз точнее.
 
 [наверх](#top)
+
 ## <a name="2"></a> Документ и объекты страницы 
