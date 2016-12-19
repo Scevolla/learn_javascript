@@ -324,3 +324,6 @@ function showMessage(text, options) {
 ### <a name="10_3"></a> Навигация по DOM-элементам
 
 ![](https://learn.javascript.ru/article/traversing-dom/dom-links@2x.png)
+![](https://learn.javascript.ru/article/traversing-dom/dom-links-elements@2x.png)
+
+[наверх](#top)
