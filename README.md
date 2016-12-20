@@ -30,6 +30,7 @@
 	- [Дерево DOM] (#10_2)
 	- [Навигация по DOM-элементам] (#10_3)
 	- [Поиск: getElement* и querySelector*] (#10_4)
+	- [Свойства узлов: тип, тег и содержимое] (#10_5)
 
 ## <a name="1"> Основы
 
@@ -346,3 +347,7 @@ function showMessage(text, options) {
 - Метод **elem.closest(css)** ищет ближайший элемент выше по иерархии DOM, подходящий под CSS-селектор css. Сам элемент тоже включается в поиск.
 
 [наверх](#top)
+
+### <a name="10_5"></a> Свойства узлов: тип, тег и содержимое
+
+![](https://learn.javascript.ru/article/basic-dom-node-properties/hierarchy.png)
