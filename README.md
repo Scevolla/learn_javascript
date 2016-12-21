@@ -33,6 +33,7 @@
 	- [Свойства узлов: тип, тег и содержимое] (#10_5)
 	- [Атрибуты и DOM-свойства] (#10_6)
 	- [Методы contains и compareDocumentPosition] (#10_7)
+	- [Добавление и удаление узлов] (#10_8)
 
 ## <a name="1"> Основы
 
@@ -411,3 +412,22 @@ function showMessage(text, options) {
 
 - Для проверки, является ли один узел предком другого, достаточно метода **nodeA.contains(nodeB)**.
 - Для расширенной проверки на предшествование есть метод **nodeA.compareDocumentPosition(nodeB)**.
+
+### <a name="10_8"> Добавление и удаление узлов
+
+Методы для создания узлов:
+
+- **document.createElement(tag)** – создает элемент
+- **document.createTextNode(value)** – создает текстовый узел
+- **elem.cloneNode(deep)** – клонирует элемент, если **deep == true**, то со всеми потомками, если **false** – без потомков.
+
+Вставка и удаление узлов:
+
+- **parent.appendChild(elem)**
+- **parent.insertBefore(elem, nextSibling)**
+- **parent.removeChild(elem)**
+- **parent.replaceChild(newElem, elem)**
+
+Все эти методы возвращают **elem**.
+
+[наверх](#top)
