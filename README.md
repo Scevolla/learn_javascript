@@ -386,11 +386,13 @@ function showMessage(text, options) {
 - **elem.removeAttribute(name)** – удаляет атрибут
 - **elem.attributes** - содержит псевдо-массив объектов типа **Attr**
 
+
 - **className**
 - **classList**
 	- **elem.classList.contains("class")** – возвращает **true/false**, в зависимости от того, есть ли у элемента класс class.
 	- **elem.classList.add/remove("class")** – добавляет/удаляет класс class
 	- **elem.classList.toggle("class")** – если класса class нет, добавляет его, если есть – удаляет.
+
 
 Синхронизация между атрибутами и свойствами:
 
