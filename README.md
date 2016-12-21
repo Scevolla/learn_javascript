@@ -32,6 +32,7 @@
 	- [Поиск: getElement* и querySelector*] (#10_4)
 	- [Свойства узлов: тип, тег и содержимое] (#10_5)
 	- [Атрибуты и DOM-свойства] (#10_6)
+	- [Методы contains и compareDocumentPosition] (#10_7)
 
 ## <a name="1"> Основы
 
@@ -405,3 +406,8 @@ function showMessage(text, options) {
 - Атрибуты, название которых начинается с **data-**, можно прочитать через **dataset**. Эта возможность не поддерживается IE10-.
 
 [наверх](#top)
+
+### <a name="10_7"> Методы contains и compareDocumentPosition
+
+- Для проверки, является ли один узел предком другого, достаточно метода **nodeA.contains(nodeB)**.
+- Для расширенной проверки на предшествование есть метод **nodeA.compareDocumentPosition(nodeB)**.
