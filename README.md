@@ -37,6 +37,7 @@
 	- [Мультивставка: insertAdjacentHTML и DocumentFragment] (#10_9)
 	- [Стили, getComputedStyle] (#10_10)
 	- [Размеры и прокрутка элементов] (#10_11)
+	- [Размеры и прокрутка страницы] (#10_12)
 
 ## <a name="1"> Основы
 
@@ -486,5 +487,41 @@ function showMessage(text, options) {
 - **scrollLeft/scrollTop** – ширина/высота прокрученной части документа, считается от верхнего левого угла.
 
 Все свойства, доступны только для чтения, кроме **scrollLeft/scrollTop**. Изменение этих свойств заставляет браузер прокручивать элемент.
+
+[наверх](#top)
+
+### <a name="10_12"> Размеры и прокрутка страницы
+
+**Размеры:**
+
+- Для получения размеров видимой части окна: **document.documentElement.clientWidth/Height**
+- Для получения размеров страницы с учётом прокрутки:
+
+```javascript
+var scrollHeight = Math.max(
+  document.body.scrollHeight, document.documentElement.scrollHeight,
+  document.body.offsetHeight, document.documentElement.offsetHeight,
+  document.body.clientHeight, document.documentElement.clientHeight
+);
+```
+
+**Прокрутка окна:**
+
+- Прокрутку окна можно получить как **window.pageYOffset** (для горизонтальной – **window.pageXOffset**) везде, кроме IE8-.
+- На всякий случай – вот самый кросс-браузерный способ, учитывающий IE7- в том числе:
+
+```javascript
+var html = document.documentElement;
+var body = document.body;
+
+var scrollTop = html.scrollTop || body && body.scrollTop || 0;
+scrollTop -= html.clientTop; // в IE7- <html> смещён относительно (0,0)
+```
+
+- Установить прокрутку можно при помощи специальных методов:
+
+	- **window.scrollTo(pageX,pageY)** – абсолютные координаты,
+	- **window.scrollBy(x,y)** – прокрутить относительно текущего места.
+	- **elem.scrollIntoView(top)** – прокрутить, чтобы элемент elem стал виден.
 
 [наверх](#top)
