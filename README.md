@@ -653,11 +653,13 @@ function showMessage(text, options) {
 
 	Затем, чтобы инициировать событие, запускается **elem.dispatchEvent(event).**
 - В IE9+ поддерживается более старый стандарт
+	
 	Объект события создаётся вызовом document.createEvent:
 	```javascript
 	var event = document.createEvent(eventInterface);
 	var event = document.createEvent("Event");
 	```
+	
 	Далее событие нужно инициализировать:
 	```javascript
 	event.initEvent(type, boolean bubbles, boolean cancelable);
